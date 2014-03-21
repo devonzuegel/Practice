@@ -16,7 +16,7 @@ def balanceable_rec(L, R, weights):
 
 	w = weights.pop(0)
 	if balanceable_rec(L + w, R, weights[:]):	return True
-	if balanceable_rec(L, R, weights[:]):			return True
+	if balanceable_rec(L, R, weights[:]):		return True
 	if balanceable_rec(L, R + w, weights[:]):	return True
 
 	return False
@@ -32,5 +32,5 @@ def balanceable(w, weights):
 weights = [4,1]
 w = 3
 
-if (balanceable(w, weights)):		print("That can be balanced!")
-else:														print("That cannot be balanced!")
+if (balanceable(w, weights)):	print("That can be balanced!")
+else:				print("That cannot be balanced!")
