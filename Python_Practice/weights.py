@@ -29,7 +29,7 @@ def balanceable(w, weights):
 # ----------------------
 # MAIN
 
-weights = [4,1]
+weights = [9, 3, 1]
 w = 3
 
 if (balanceable(w, weights)):  print("That can be balanced!")
